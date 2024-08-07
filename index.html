@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 90%;
+            max-width: 900px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .image-wrapper {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            overflow: hidden; /* Ensure images don't overflow their containers */
+            border-radius: 10px;
+            border: 5px solid #0ce325;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-wrapper:hover {
+            transform: scale(1.1);
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-wrapper">
+            <a href="#"><img src="images/image1.png" alt="Image 1"></a>
+        </div>
+        <div class="image-wrapper">
+            <a href="#"><img src="images/image2.png" alt="Image 2"></a>
+        </div>
+        <div class="image-wrapper">
+            <a href="#"><img src="images/image3.png" alt="Image 3"></a>
+        </div>
+        <div class="image-wrapper">
+            <a href="#"><img src="images/image4.png" alt="Image 4"></a>
+        </div>
+    </div>
+</body>
+</html>
